@@ -8,18 +8,18 @@ function Tweet({tweet}) {
   return (
     <div className="tweet">
       
-      <ProfileImage tweet={tweet}/>
+      <ProfileImage image={tweet.user.image}/>
 
       <div className="body">
         <div className="top">
-          <User tweet={tweet}/>
+          <User name={tweet.user.name} handle ={tweet.user.handle}/>
 
           
-          <TimeStamp tweet={tweet}/>
+          <TimeStamp time={tweet.timestamp}/>
         </div>
 
         
-        <Message tweet={tweet}/>
+        <Message message={tweet.message}/>
 
         <Actions/>
       </div>

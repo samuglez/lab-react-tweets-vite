@@ -1,8 +1,8 @@
-export default function User({tweet}){
+export default function User({name, handle}){
     return(
         <span className="user">
-            <span className="name">{tweet.user.name}</span>
-            <span className="handle">@{tweet.user.handle}</span>
+            <span className="name">{name}</span>
+            <span className="handle">@{handle}</span>
         </span>
     )
 }
